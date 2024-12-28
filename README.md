@@ -1,5 +1,5 @@
-# Project Name
-> Outline a brief description of your project.
+# Lending Club Case Study
+> The aim of this case study is to identify patterns which indicate if a person is likely to default, which may be used for taking actions such as denying the loan, reducing the amount of loan, lending (to risky applicants) at a higher interest rate.
 
 
 ## Table of Contents
@@ -11,38 +11,51 @@
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+- This case study uses the techniques in EDA for getting the outcomes to understand the driving factors (or driver variables) behind loan default, i.e. the 
+    variables which are strong indicators of default.
+- Background : This dataset is of a consumer finance company which specialises in lending various types of loans to urban customers. When the company receives a 
+    loan application, the company has to make a decision for loan approval based on the applicant’s profile.
+- Business probem : Lending loans to ‘risky’ applicants is the largest source of financial loss (called credit loss). Credit loss is the amount of money lost by 
+    the lender when the borrower refuses to pay or runs away with the money owed. In this case, the customers labelled as 'charged-off' are the 'defaulters'.   
+    To identify these risky loan applicants, then such loans can be reduced thereby cutting down the amount of credit loss. Identification of such 
+    applicants using EDA is the aim of this case study.
+- Dataset : Dataset contains the complete loan data for all loans issued through the time period 2007 t0 2011 and contains information about past loan applicants 
+    and whether they ‘defaulted’ or not
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+  The major driving factors behind loan default prediction and to reduce credit loss are-
+  1)  DTI
+  2)  Verification_status
+  3)  Interest rates
+  4)  pub_rec_bankrupties
+  5)  Grades
+
+  Recommendations-
+      Applicants should not have high DTI ratio.
+      Applicants should not be from California(CA), Florida(FL), New York (NY) and Texas (TX) states and applications should be verified properly.
+      Interest rate should not be higher as that increases charged off.
+      Public record of bankruptcies for applicant’s should be checked properly.
+      Grade should be higher for the loan approval as that means low risk.
+
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+- numpy          -version 1.20.3
+- pandas         -version 1.3.4
+- seaborn        -version 0.11.2
+- matplotlib     -version 3.4.3
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
+- This project was inspired by Upgrad IIT Bangalore as a case study for MS in AIML
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+  Created by [@Ashlesha611] - feel free to contact me!
 
 
 <!-- Optional -->
